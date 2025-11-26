@@ -1,7 +1,7 @@
 name: CI/CD pour Angular sur Docker
 #nom du workflow
 #définit les événements qui déclenchent les événements:quand on push sur la main.
-#hoplaboumpour pouvoir push
+#hoplaboumpour pouvoir pusher
 on:
   push:
     branches:
