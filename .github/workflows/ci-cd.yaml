@@ -36,6 +36,6 @@ jobs:
       - name: Build et push image Docker
         uses: docker/build-push-action@v6
         with:
+          context: .
           push: true
           tags: ${{ secrets.SECRET_NAME }}/angularapp:latest
-          context: .
