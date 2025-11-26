@@ -37,5 +37,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.SECRET_NAME }}/angularapp:latest
