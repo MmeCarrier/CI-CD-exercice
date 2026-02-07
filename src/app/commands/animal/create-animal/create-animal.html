@@ -1,0 +1,59 @@
+<form #formulaire="ngForm" (ngSubmit)="onSubmit(formulaire)" >
+    <div>
+        <label for="nom" class="form-label">Nom: </label>
+        <input type="text" 
+           id="nom"
+           name="nom" 
+           [(ngModel)]="nom" 
+           placeholder="Entrez le nom de l'animal" >
+
+        <label for="espece" class="form-label">Espèce: </label>
+        <input type="text" 
+           id="espece"
+           name="espece" 
+           [(ngModel)]="espece" 
+           placeholder="Entrez le nom de l'espèce" required>
+
+        <label for="age" class="form-label">Âge: </label>
+        <input type="number" 
+           name="age" 
+           [(ngModel)]="age" placeholder="Entrez l'âge" >
+
+            <label>Sexe (M = true / F = false)</label>
+            <input type="checkbox" name="mf" [(ngModel)]="mf" />
+
+            <label>Stérilisé</label>
+            <input type="checkbox" name="sterilise" [(ngModel)]="sterilise" />
+
+            <label>Primo vaccin</label>
+            <input type="checkbox" name="primoVaccin" [(ngModel)]="primovaccin" />
+
+            <label>Vaccins complets</label>
+            <input type="checkbox" name="vaccinComplet" [(ngModel)]="vaccincomplet" />
+
+        <label for="provenance" class="form-label">Provenance: </label>
+        <input type="text" 
+           id="provenance"
+           name="provenance" 
+           [(ngModel)]="provenance" 
+           placeholder="Provenance de l'animal" required>
+
+        <label for="lieuProvenance" class="form-label">lieuProvenance: </label>
+        <input type="text" 
+           id="lieuProvenance"
+           name="lieuProvenance" 
+           [(ngModel)]="lieuprovenance" 
+           placeholder="Entrez le lieu de provenance de l'animal" >
+
+        <label for="localisation" class="form-label">Localisation: </label>
+        <input type="text" 
+           id="localisation"
+           name="localisation" 
+           [(ngModel)]="localisation" 
+           placeholder="Entrez la localisation" required>
+
+<button type="submit" [disabled]="!formulaire.valid">Ajouter</button> 
+    @if (message) { <p>{{message}}</p> }
+
+    </div>
+</form>

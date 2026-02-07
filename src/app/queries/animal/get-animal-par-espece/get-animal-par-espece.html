@@ -1,0 +1,21 @@
+<h2>Recherche par espèce</h2>
+
+<input
+  type="text"
+  placeholder="chien, chat..."
+  [(ngModel)]="espece"
+/>
+
+<button (click)="rechercher()">Rechercher</button>
+
+@if (animals.length > 0) {
+  <ul>
+    @for (animal of animals; track animal.animalId) {
+      <li>
+        nom: {{ animal.nom }} espèce: {{ animal.espece }} secteur: {{ animal.secteurNom}}
+      </li>
+    }
+  </ul>
+} @else {
+  <p>Aucun animal trouvé.</p>
+}

@@ -1,5 +1,8 @@
 <nav class="Navbar">
 <p>navbar works!</p>
 <li><a routerLink="home" routerLinkActive="active">Home</a></li>
-<li><a [routerLink]="['/animal/espece', 'chien']">Voir les chiens</a></li>
+<li><a [routerLink]="['/animal/espece', 'chien']">Rechercher par espèce</a></li>
+<li><a [routerLink]="['/animal/nom', 'chien']">Rechercher par nom</a></li>
+<li><a [routerLink]="['/benevole/prenom', 'benevole']">Rechercher par prénom</a></li>
+<li><a [routerLink]="['/animal/create']">Ajouter un animal</a></li>
 </nav>

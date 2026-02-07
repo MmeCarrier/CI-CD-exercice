@@ -1,0 +1,27 @@
+<p>get-benevole-by-surname works!</p>
+
+
+<input
+  type="text"
+  placeholder="Entrez le prénom d'un bénévole..."
+  [(ngModel)]="prenom"
+/>
+
+<button (click)="rechercher()">Rechercher</button>
+
+@if (rechercheEffectuee) {
+  @if (benevoles.length > 0) {
+    <ul>
+      @for (benevole of benevoles; track benevole.benevoleId) {
+        <li>
+          Prenom: {{ benevole.prenom }} Nom: {{ benevole.nom }} Secteur: {{ benevole.secteurNom}} 
+        </li>
+      }
+    </ul>
+  } @else {
+    <p>Aucun bénévole trouvé.</p>
+  }
+}
+
+<app-test> </app-test>
+

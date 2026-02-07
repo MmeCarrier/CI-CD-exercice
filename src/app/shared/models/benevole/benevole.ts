@@ -12,6 +12,7 @@ export interface Benevole {
   formeReptile: boolean;
   formeContrat: boolean;
   secteurId: number;
+  secteurNom?: string;
   fas: Fa[];
 
 }

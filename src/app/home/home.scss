@@ -1,0 +1,11 @@
+   .divider {
+      height: 3px;
+      width: 100%;
+      background: var(--red-to-pink-to-purple-horizontal-gradient);
+      margin-block: 1.5rem;
+    }
+    h1 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 10cm;
+        margin-top: 2cm;
+    }
+    h6 {font-size: large;} // pas de .h1 car ce n’est pas une classe. .divider est par contre une classe.

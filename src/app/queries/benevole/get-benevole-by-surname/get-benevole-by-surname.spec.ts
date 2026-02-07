@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GetAnimalsByEspece } from './get-animal-by-espece';
+import { GetBenevoleBySurname } from './get-benevole-by-surname';
 
-describe('GetAnimalByEspece', () => {
-  let component: GetAnimalsByEspece;
-  let fixture: ComponentFixture<GetAnimalsByEspece>;
+describe('GetBenevoleBySurname', () => {
+  let component: GetBenevoleBySurname;
+  let fixture: ComponentFixture<GetBenevoleBySurname>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GetAnimalsByEspece]
+      imports: [GetBenevoleBySurname]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GetAnimalsByEspece);
+    fixture = TestBed.createComponent(GetBenevoleBySurname);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

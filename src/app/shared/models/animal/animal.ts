@@ -15,6 +15,25 @@ export interface Animal {
   localisation: string;
   remarque?: string;
   secteurId: number;
+  secteurNom?: string;
+  // secteur: Secteur;
+  fas: Fa[];
+}
+
+export interface AnimalRequest {
+  nom: string;
+  espece: string;
+  age?: number;
+  mf?: boolean;
+  sterilise: boolean;
+  primoVaccin?: boolean;
+  vaccinComplet?: boolean;
+  provenance: string;
+  lieuProvenance?: string;
+  localisation: string;
+  remarque?: string;
+  secteurId: number;
+  secteurNom?: string;
   // secteur: Secteur;
   fas: Fa[];
 }
