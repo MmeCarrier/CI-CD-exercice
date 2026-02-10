@@ -1,8 +1,24 @@
 <nav class="Navbar">
-<p>navbar works!</p>
+<ul class="a">
 <li><a routerLink="home" routerLinkActive="active">Home</a></li>
-<li><a [routerLink]="['/animal/espece', 'chien']">Rechercher par espèce</a></li>
-<li><a [routerLink]="['/animal/nom', 'chien']">Rechercher par nom</a></li>
-<li><a [routerLink]="['/benevole/prenom', 'benevole']">Rechercher par prénom</a></li>
 <li><a [routerLink]="['/animal/create']">Ajouter un animal</a></li>
+<li>Modifier un animal</li>
+<li>Supprimer un animal</li>
+<li><a [routerLink]="['/animal/espece', 'chien']">Rechercher animal par espèce</a></li>
+<li><a [routerLink]="['/animal/nom', 'chien']">Rechercher animal par nom</a></li>
+<hr>
+<li>Ajouter un bénévole</li>
+<li>Modifier un bénévole</li>
+<li>Supprimer un bénévole</li>
+<li><a [routerLink]="['/benevole/prenom', 'benevole']">Rechercher bénévole par prénom</a></li>
+<hr>
+<li>Créer une famille d’accueil</li>
+<li>Supprimer une famille d’accueil</li>
+<hr>
+<strong>
+<li>Déclarer une épidémie ☠  </li>
+</strong>
+<li>Supprimer une épidémie</li>
+<li>Rechercher une épidémie</li>
+</ul>
 </nav>

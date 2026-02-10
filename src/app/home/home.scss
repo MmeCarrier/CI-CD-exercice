@@ -5,7 +5,10 @@
       margin-block: 1.5rem;
     }
     h1 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin-left: 10cm;
-        margin-top: 2cm;
+        
+        margin-top: 1cm;
+        
     }
     h6 {font-size: large;} // pas de .h1 car ce n’est pas une classe. .divider est par contre une classe.
+    div.a {text-align: center;}
+    div.b{text-align: right;}
